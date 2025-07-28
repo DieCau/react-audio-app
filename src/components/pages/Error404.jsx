@@ -11,7 +11,7 @@ const error404 = () => {
               <span className="text-secondary">¡Oops! Página no encontrada.</span>
             </p>
             <Button as={Link} to="/" variant="secondary" size="lg">
-              Volver al Inicio
+              Volver al Home
             </Button>
           </Col>
         </Row>
