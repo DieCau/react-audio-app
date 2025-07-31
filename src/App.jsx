@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import Menu from "./components/shared/Menu"
+import Nabvar from "./components/shared/Nabvar"
 import Footer from "./components/shared/Footer"
 import DetalleCancion from "./components/pages/DetalleCancion";
 import Login from "./components/pages/Login";
@@ -57,7 +57,7 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      <Menu usuarioAdmin={usuarioAdmin} setUsuarioAdmin={setUsuarioAdmin}></Menu>
+      <Nabvar usuarioAdmin={usuarioAdmin} setUsuarioAdmin={setUsuarioAdmin}></Nabvar>
       <main>
         <Routes>
           <Route path="/" element={<Inicio canciones={canciones}></Inicio>}></Route>

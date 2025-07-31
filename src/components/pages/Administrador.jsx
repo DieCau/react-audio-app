@@ -1,6 +1,6 @@
 import { Button, Table, Form, Row, Col } from "react-bootstrap";
-import ItemCancion from "./cancion/ItemCancion";
-import { cancionesData } from "../../data/cancionesPrueba";
+import ItemCancion from "./songs/ItemSong";
+import { songsData } from "../../data/songsTest";
 import { Link } from "react-router";
 import { useState } from "react";
 
@@ -11,7 +11,7 @@ const Administrador = ({ setCanciones, canciones, borrarCancion }) => {
     cancion.titulo.toLowerCase().includes(terminoBusqueda.toLocaleLowerCase())
   );
   const cargarCancionesPrueba = () => {
-    setCanciones(cancionesData);
+    setCanciones(songsData);
   };
 
   const handleBuscarChange = (e) => {
