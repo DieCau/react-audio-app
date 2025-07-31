@@ -1,5 +1,5 @@
 import { Container, Form, Row, Col} from "react-bootstrap";
-import CardCancion from "./cancion/CardCancion";
+import CardCancion from "./songs/CardSong";
 import { useState } from "react";
 import BannerVideo from "../../assets/Banner.mp4"
 

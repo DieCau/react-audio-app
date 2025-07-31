@@ -5,7 +5,7 @@ import LogoNav from "../../assets/echoTune_Logo-negativo.png";
 import { NavLink, Link, useNavigate} from "react-router";
 import { Button } from "react-bootstrap";
 
-function Navbar({ usuarioAdmin, setUsuarioAdmin }) {
+function Menu({ usuarioAdmin, setUsuarioAdmin }) {
 
   const navegacion = useNavigate()
 
@@ -62,4 +62,4 @@ function Navbar({ usuarioAdmin, setUsuarioAdmin }) {
   );
 }
 
-export default Navbar;
+export default Menu;
