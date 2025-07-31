@@ -1,68 +1,105 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+#root{
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+main{
+  flex-grow: 1;
+
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.imagen-detalle {
+  box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.45);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.appstore{
+  width: 250px;
+}
+
+.playstore{
+  width: 250px;
+}
+
+.contenedorImagen{
+  transition: 300ms;
+}
+
+.contenedorImagen:hover{
+    transform: scale(1.01);
+
+}
+
+.logotipo{
+  width: 230px;
+}
+
+.bg-index{
+  background: #2C2B4B;
+  background: linear-gradient(0deg,rgba(44, 43, 75, 1) 0%, rgba(33, 37, 41, 1) 100%);
+}
+
+.bg-card{
+  background: #2C2B4B;
+  background: linear-gradient(180deg,rgba(44, 43, 75, 1) 0%, rgba(55, 52, 97, 1) 100%);
+}
+.color-secundario{
+  color: #9ddacb
+}
+
+.color-boton-cargar{
+  color: #f8dcb4
+}
+
+.contenedor-imagen{
+  width: 130px;
+  height: 130px;
+}
+.card-size {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.img-tabla {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.botones-administrador{
+  transition: 300ms;
+}
+
+.botones-administrador:hover .bi-plus-circle{
+  color: #ffffff!important;
+}
+
+.botones-administrador:hover .bi-database-add {
+  color: #ffffff!important;
+}
+
+.logo-nav {
+  width: 100px;
+}
+
+.logo-login {
+  width: 180px;
+}
+
+.banner-video{
+  height: 100px;
+  background: #000;
+}
+
+.contenedor-video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
