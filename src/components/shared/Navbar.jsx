@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import LogoNav from "../../assets/echoTune_Logo-negativo.png";
+import LogoNav from "../../assets/echoTune-negativo.png";
 import { NavLink, Link, useNavigate} from "react-router";
 import { Button } from "react-bootstrap";
 
