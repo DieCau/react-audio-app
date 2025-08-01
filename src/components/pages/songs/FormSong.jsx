@@ -5,8 +5,12 @@ import Swal from 'sweetalert2'
 import { Link, useNavigate, useParams } from "react-router";
 import { useEffect, useState } from "react";
 
-const FormSong = ({crearCancion, titulo, buscarCancion, editarCancion}) => {
+// Componente que permite crear o editar una canción.
+// Utiliza React Hook Form para manejar el formulario y validaciones.
+// Recibe como props funciones para crear, buscar y editar canciones.
+// Dependiendo del título, muestra un formulario para añadir o editar una canción.
 
+const FormSong = ({crearCancion, titulo, buscarCancion, editarCancion}) => {
   const {
     register,
     handleSubmit,
