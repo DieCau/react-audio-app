@@ -5,6 +5,11 @@ import LogoNav from "../../assets/echoTune-negativo.png";
 import { NavLink, Link, useNavigate} from "react-router";
 import { Button } from "react-bootstrap";
 
+// Componente de navegación que muestra el menú principal de la aplicación
+// Incluye enlaces a las páginas de inicio, administrador, inicio de sesión y nosotros
+// Utiliza Bootstrap para el diseño responsivo y estilizado
+// Permite cerrar sesión y redirigir al usuario a la página de inicio
+
 function Menu({ usuarioAdmin, setUsuarioAdmin }) {
 
   const navegacion = useNavigate()
