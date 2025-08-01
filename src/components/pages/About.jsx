@@ -3,6 +3,11 @@ import santigonz from "../../assets/santigonz03.png"
 import andrea from "../../assets/andrea-piacquadio.jpg"
 import gregorio from "../../assets/Gregorio.jpg"
 
+// Componente de "About" que muestra información sobre el equipo de desarrollo
+// Incluye imágenes y nombres de los desarrolladores
+// Utiliza Bootstrap para el diseño responsivo y estilizado
+// Importa imágenes de los desarrolladores desde la carpeta de assets
+
 const About = () => {
     return (
       <Container className="my-5">
