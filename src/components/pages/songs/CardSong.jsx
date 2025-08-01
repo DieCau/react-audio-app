@@ -1,6 +1,12 @@
 import { Card, Col} from "react-bootstrap";
 import { Link } from "react-router";
 
+// Componente que muestra una tarjeta con la información de una canción.
+// Recibe como prop un objeto "cancion" que contiene la información de la canción.
+// Utiliza Bootstrap para el diseño y estilos de la tarjeta.
+// El componente muestra la imagen de la canción, el título, el artista y un icono
+// que al hacer clic redirige a la página de detalle de la canción.
+
 const CardSong = ({cancion}) => {
     return (
     <Col md={6} lg={4} className="mb-5">
