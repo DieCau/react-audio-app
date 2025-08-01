@@ -4,6 +4,13 @@ import { songsData } from "../../data/songsTest";
 import { Link } from "react-router";
 import { useState } from "react";
 
+// Componente principal que muestra una lista de canciones en una tabla.
+// Permite buscar canciones por título y cargar canciones de prueba.
+// Recibe como props un estado para las canciones, una función para borrar una canción y una función para establecer las canciones.
+// Utiliza el componente ItemCancion para mostrar cada canción en una fila de la tabla.
+// Incluye un formulario para buscar canciones y botones para agregar nuevas canciones o cargar canciones de prueba.
+// Si no se encuentran canciones, muestra un mensaje indicando que no hay canciones para mostrar.
+
 const Administrador = ({ setCanciones, canciones, borrarCancion }) => {
   const [terminoBusqueda, setTerminoBusqueda] = useState("");
 
