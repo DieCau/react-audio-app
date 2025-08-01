@@ -2,6 +2,13 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router";
 import Swal from "sweetalert2";
 
+// Componente que muestra una fila con la información de una canción en una tabla.
+// Recibe como props un objeto "cancion", el número de fila y una función para borrar la canción.
+// Muestra el título, artista, género, imagen y botones para editar y eliminar la canción.
+// Al hacer clic en el botón de eliminar, muestra una alerta de confirmación antes de proceder con la eliminación.
+// Si la canción se elimina correctamente, muestra una alerta de éxito.
+// Si ocurre un error al eliminar, muestra una alerta de error.
+// El botón de editar redirige a la página de edición de la canción.
 const ItemSong = ({cancion, fila, borrarCancion}) => {
 
   const eliminarCancion = () => {
