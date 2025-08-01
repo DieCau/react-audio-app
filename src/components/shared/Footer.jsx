@@ -3,6 +3,12 @@ import googleplay from "../../assets/google-play-badge-bb.svg"
 import echoLogo from "../../assets/echoTune_Logo-negativo.png"
 import { Col, Row } from "react-bootstrap";
 
+
+// Componente de pie de página que muestra información de contacto y enlaces a redes sociales
+// Incluye enlaces a las tiendas de aplicaciones y redes sociales
+// Utiliza Bootstrap para el diseño responsivo y estilizado
+// Importa imágenes de las tiendas de aplicaciones y el logotipo de la aplicación desde la carpeta de assets
+
 const Footer = () => {
     return (
  <footer className=" bg-dark-subtle py-3 pe-3 ps-3 d-flex justify-content-around">
