@@ -2,6 +2,13 @@ import { useEffect, useRef, useState } from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router";
 
+// Componente que muestra los detalles de una canción específica.
+// Utiliza el hook useParams para obtener el ID de la canción desde la URL.
+// Utiliza el hook useState para manejar el estado de la canción y si está cargando.
+// Utiliza el hook useEffect para buscar la canción por ID al cargar el componente.
+// Si la canción no se encuentra, redirige a una página de error.
+// Muestra la imagen, título, artista, álbum, género y duración de la canción.
+
 const DetalleCancion = ({ buscarCancion }) => {
   const { id } = useParams();
   const [cancion, setCancion] = useState({});
