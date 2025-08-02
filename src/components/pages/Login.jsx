@@ -4,6 +4,9 @@ import ImgLogin from '../../assets/echoTune_Logo-negativo.png'
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
+// Componente de la página de Login
+// Permite iniciar sesión como administrador
+
 const Login = ({setUsuarioAdmin}) => {
   const {
     register,
