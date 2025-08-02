@@ -1,3 +1,7 @@
+// src/data/songsTest.js
+// Este archivo contiene un conjunto de datos simulado de canciones para realizar pruebas.
+// Cada objeto de canción incluye propiedades como ID, título, 
+// artista, álbum, género, imagen, duración y URL del audio.
 export const songsData = [
     {
         id: '456ghj',
