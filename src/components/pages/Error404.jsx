@@ -1,6 +1,8 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router';
 
+// Componente de error 404
+
 const error404 = () => {
   return (
       <Container className="d-flex flex-column justify-content-center text-center min-vh-100">
