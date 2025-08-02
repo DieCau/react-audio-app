@@ -3,6 +3,8 @@ import CardCancion from "./songs/CardSong";
 import { useState } from "react";
 import BannerVideo from "../../assets/Banner.mp4"
 
+// Componente de la página de Home 
+// Muestra las canciones filtradas por género y permite buscar canciones por título
 
 const Home = ({canciones}) => {
     const [terminoBusqueda, setTerminoBusqueda] = useState('')
