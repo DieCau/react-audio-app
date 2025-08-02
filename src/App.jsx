@@ -12,6 +12,14 @@ import { useEffect, useState } from "react";
 import ProtectorAdmin from "./components/routes/ProtectorAdmin";
 import { v4 as uuidv4 } from 'uuid';
 
+// App.jsx es el componente principal de la aplicación.
+// Contiene las rutas de la aplicación y los componentes que se renderizarán en cada ruta.
+// También contiene el estado del usuario administrador y la función para crear una nueva canción.
+// El estado del usuario administrador se almacena en el almacenamiento local del navegador.
+// La función para crear una nueva canción se llama cuando se envía el formulario de agregar canción.
+// La función de renderizado del componente App se ejecuta cuando se carga la página.
+// El componente App se renderiza en el elemento con el id "root" del archivo index.html.
+
 function App() {
   const cancionesLocalStorage = JSON.parse(localStorage.getItem('catalogoCanciones')) || []
   const [canciones, setCanciones] = useState(cancionesLocalStorage)
